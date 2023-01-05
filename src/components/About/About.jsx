@@ -3,13 +3,13 @@ import AboutCarts from "./AboutCarts";
 function About() {
   return (
     <>
-      <div className="container">
-        <section className="flex flex-col">
+      <section className="flex flex-col justify-between gap-2 about-section">
+        <div className="container">
           <div className="flex gap-6">
             <AboutCarts />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </>
   );
 }

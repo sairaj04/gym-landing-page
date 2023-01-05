@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       <section className="hero-section w-full h-screen">
-        <div className="container">
+        <div className="container-hero">
           <div
             className="flex flex-col text-white
            absolute hero-text "
@@ -22,7 +22,8 @@ function Hero() {
               <span className="font-thin">fit & perfect</span>
             </h1>
             <Link className="text-[15px] bg-white text-black text-center pt-[18px] font-[600] w-[20rem] h-[5.5rem] uppercase hero-cta relative ml-2 ">
-              Our Classes <i class="fa-solid fa-arrow-right text-[#FF0336]"></i>
+              Our Classes{" "}
+              <i className="fa-solid fa-arrow-right text-[#FF0336]"></i>
             </Link>
           </div>
         </div>
