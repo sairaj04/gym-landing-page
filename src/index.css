@@ -166,6 +166,130 @@ body {
   position: absolute;
 }
 
+/* grid */
+
+.item-0,
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+  filter: grayscale(100%);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-0:hover,
+.item-1:hover,
+.item-2:hover,
+.item-3:hover,
+.item-4:hover,
+.item-5:hover {
+  filter: grayscale(0%);
+  transform: scale(1.3);
+}
+
+
+.item-0-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.item-1-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-column-end: 4;
+  overflow: hidden;
+}
+
+.item-2-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 2;
+  grid-column-end: 5;
+  overflow: hidden;
+}
+
+.item-3-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  overflow: hidden;
+}
+
+.item-4-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.item-5-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 5;
+  overflow: hidden;
+}
+
+.item-0 {
+  background-image: url('../src/images/features/cycling.jpg');
+  width: 100%;
+  height: 100%;
+}
+
+.item-1 {
+  background-image: url('../src/images/features/karate.jpg');
+  width: 100%;
+  height: 100%;
+
+}
+
+.item-2 {
+  background-image: url('../src/images/features/power.jpg');
+  width: 100%;
+  height: 100%;
+}
+
+.item-3 {
+  background-image: url('../src/images/features/meditation.jpg');
+  width: 100%;
+  height: 100%;
+
+}
+
+.item-4 {
+  background-image: url('../src/images/features/mma.jpg');
+  width: 100%;
+  height: 100%;
+
+}
+
+.item-5 {
+  background-image: url('../src/images/features/workout.jpg');
+  width: 100%;
+  height: 100%;
+}
+
 /* scrollbar ------------------------- */
 
 /* Firefox */
