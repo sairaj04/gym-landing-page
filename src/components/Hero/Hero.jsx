@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
 import TitleBg from "../../images/pricing/titlebg.svg";
+import MainButton from "../MainButton";
 
 function Hero() {
   return (
     <>
       <section className="hero-section w-full h-screen">
         <div className="container-hero">
+          {/* hero section */}
           <div
             className="flex flex-col text-white
            absolute hero-text "
@@ -15,19 +16,18 @@ function Hero() {
             </p>
             <img
               src={TitleBg}
+              alt="text_bg"
               className=" w-[52%] absolute -top-3 title-white "
             />
             <h1 className="font-bold text-[48px] uppercase mb-[4rem]">
               make your body <br />
               <span className="font-thin">fit & perfect</span>
             </h1>
-            <Link className="text-[15px] bg-white text-black text-center pt-[18px] font-[600] w-[20rem] h-[5.5rem] uppercase hero-cta relative ml-2 ">
-              Our Classes{" "}
-              <i className="fa-solid fa-arrow-right text-[#FF0336]"></i>
-            </Link>
+
+            <MainButton color={`text-black`} bg={`bg-white`} />
           </div>
         </div>
-
+        {/* socials */}
         <div
           className="flex flex-row-reverse -rotate-90 text-white
           absolute top-2/4 right-0 items-center"

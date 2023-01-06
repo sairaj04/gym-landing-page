@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  max-width: 113rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@ body {
 .hero-section {
   background-image: url('../src/images/hero/hero-img.jpg');
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   object-fit: cover;
   background-size: cover;
   background-position: center center;
@@ -54,8 +54,6 @@ body {
 .title-white {
   filter: brightness(0) invert(1);
 }
-
-
 
 .hero-cta::after {
   content: '';
@@ -88,7 +86,74 @@ body {
   height: 100%;
 }
 
+.page-padding {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 
+.about-cta {
+  padding: 1.82rem 3.8rem;
+  transition: all 0.3s;
+}
+
+.about-cta::after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid rgba(63, 63, 63, 0.362);
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  transition: all 0.4s;
+}
+
+.about-cta:hover:after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid #FF0336;
+  position: absolute;
+  top: -0px;
+  left: 0px;
+  transition: all 0.4s;
+}
+
+.girl-running {
+  width: 100%;
+  height: auto;
+  top: 60%;
+  right: 46%;
+  transform: translate(50%, -50%);
+  position: absolute;
+  z-index: 5;
+}
+
+.girl-bg {
+  width: 51%;
+  height: auto;
+  top: 67.7%;
+  right: 33%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+
+.girl-text {
+  width: 15%;
+  height: auto;
+  top: 67.7%;
+  right: 84%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+
+.girl-wind {
+  width: 15%;
+  height: auto;
+  top: 64.7%;
+  right: 29%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
 
 /* scrollbar ------------------------- */
 

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [spin, setSpin] = useState(false);
+  const [sticky, setSticky] = useState(false);
 
   const joinSpin = () => {
     setSpin(true);
@@ -14,9 +15,24 @@ function Navbar() {
     setSpin(false);
   };
 
+  // sticky navbar - bg black
+  const handleScroll = () => {
+    if (window.scrollY > 10) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <>
-      <nav className="flex flex-row bg-transparent items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full ">
+      <nav
+        className={`flex flex-row bg-transparent items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full z-50 ${
+          sticky ? "bg-black shadow-xl" : ""
+        }`}
+      >
         <img src={Logo} alt="logo_img" />
         <NavList />
         <div className="flex items-center gap-10">
