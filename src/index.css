@@ -27,8 +27,13 @@ body {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 124rem;
   margin: 0 auto;
+}
+
+.page-padding {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .nav-btn-hover:hover {
@@ -86,13 +91,19 @@ body {
   height: 100%;
 }
 
-.page-padding {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.card-item-div {
+  transition: all 0.2s;
 }
 
+.card-item-div:hover {
+  background-image: url('../src/images/who-we-are/info-card-bg.jpg');
+  color: white;
+}
+
+
+
 .about-cta {
-  padding: 1.82rem 3.8rem;
+  padding: 1.82rem 3.6rem;
   transition: all 0.3s;
 }
 

@@ -35,9 +35,9 @@ function Hero() {
           <p className="uppercase  text-3xl font-bold tracking-widest">share</p>
           <span className="w-[35px] bg-[#FF0336] h-[2.5px] mr-6"></span>
           <div className="text-white gap-7 flex mr-7 ">
-            <i className="fa-brands rotate-90 hover:text-[#FF0336] fa-facebook text-3xl cursor-pointer"></i>
-            <i className="fa-brands rotate-90 hover:text-[#FF0336] fa-twitter text-3xl cursor-pointer"></i>
-            <i className="fa-brands rotate-90 hover:text-[#FF0336]  fa-linkedin-in text-3xl cursor-pointer "></i>
+            <i className="fa-brands rotate-90 hover:text-[#FF0336] fa-facebook text-3xl cursor-pointer ease-in duration-200 "></i>
+            <i className="fa-brands rotate-90 hover:text-[#FF0336] fa-twitter text-3xl cursor-pointer ease-in duration-200"></i>
+            <i className="fa-brands rotate-90 hover:text-[#FF0336]  fa-linkedin-in text-3xl cursor-pointer ease-in duration-200 "></i>
           </div>
         </div>
       </section>

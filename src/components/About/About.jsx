@@ -20,7 +20,7 @@ function About() {
           </div>
 
           {/* text-img div */}
-          <div className=" grid grid-cols-[50fr,50fr] gap-[1rem]">
+          <div className=" grid grid-cols-[50fr,50fr] gap-[3rem]">
             {/* about text */}
             <div className="mt-[10.5rem] relative">
               <p className="text-white font-semibold text-[15px] relative uppercase z-10 pl-16 mb-12">
@@ -31,10 +31,10 @@ function About() {
                 alt="text_bg"
                 className="w-[31%] absolute -top-[6px]"
               />
-              <h2 className="text-[34px] font-bold leading-tight mb-6 w-[60rem]">
+              <h2 className="text-[35px] font-bold leading-tight mb-6 w-[60rem]">
                 Take Your Health And Body To Next Level
               </h2>
-              <p className="text-[16px] text-[#646464] font-medium">
+              <p className="text-[16px] text-[#646464] font-medium ">
                 Gymat an unknown printer took a galley of type and scr arsry it
                 to make a type specimen book. It has survived notte only five
                 centuri but also the.
