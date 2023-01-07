@@ -1,4 +1,5 @@
 import TitleRed from "../../images/who-we-are/title-bg.svg";
+import MainButton from "../MainButton";
 
 function Featured() {
   return (
@@ -21,27 +22,84 @@ function Featured() {
           </div>
           {/* grid */}
           <div className="grid grid-cols-4 grid-rows-2 gap-7 h-full mt-7">
-            <div className="item-0-div">
-              <div className="item-0 ease-in duration-[0.4s]"></div>
+            <div className="item-0-div relative">
+              <div className="item-0 ease-in duration-[0.4s] p-6"></div>
+              <div className="absolute z-10 bottom-10 left-10">
+                <p className="text-white text-[3rem] font-bold">Cycling</p>
+                <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
+                  Wednesday: 9:00am-10:00am
+                </p>
+              </div>
             </div>
-            <div className="item-1-div">
-              <div className="item-1 ease-in duration-[0.4s]"></div>
+
+            <div className="item-1-div relative">
+              <div className="item-1 ease-in duration-[0.4s] p-6"></div>
+              <div className="absolute z-10 bottom-10 left-10">
+                <p className="text-white text-[3rem] font-bold">Karate</p>
+                <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
+                  Friday: 10:00am-11:00am
+                </p>
+              </div>
             </div>
-            <div className="item-2-div">
-              <div className="item-2 ease-in duration-[0.4s]"></div>
+
+            <div className="item-2-div relative">
+              <div className="item-2 ease-in duration-[0.4s] p-6"></div>
+              <div className="absolute z-10 bottom-10 left-10">
+                <p className="text-white text-[3rem] font-bold">Power</p>
+                <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
+                  Saturday: 9:00am-10:00am
+                </p>
+              </div>
             </div>
-            <div className="item-3-div">
-              <div className="item-3 ease-in duration-[0.4s]"></div>
+
+            <div className="item-3-div relative">
+              <div className="item-3 ease-in duration-[0.4s] p-6"></div>
+              <div className="absolute z-10 bottom-10 left-10">
+                <p className="text-white text-[3rem] font-bold">Meditation</p>
+                <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
+                  Friday: 1:00pm-2:00pm
+                </p>
+              </div>
             </div>
-            <div className="item-4-div">
-              <div className="item-4 ease-in duration-[0.4s]"></div>
+
+            <div className="item-4-div relative">
+              <div className="item-4 ease-in duration-[0.4s] p-6"></div>
+              <div className="absolute z-10 bottom-10 left-10">
+                <p className="text-white text-[3rem] font-bold">Martial Arts</p>
+                <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
+                  Sunday: 6:00pm-7:00pm
+                </p>
+              </div>
             </div>
-            <div className="item-5-div">
-              <div className="item-5 ease-in duration-[0.4s]"></div>
+
+            <div className="item-5-div relative">
+              <div className="item-5 ease-in duration-[0.4s] p-6"></div>
+              <div className="absolute z-10 bottom-10 left-10">
+                <p className="text-white text-[3rem] font-bold">Workout</p>
+                <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
+                  Monday: 4:00pm-5:00pm
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <div className="featured-cta flex justify-center text-left items-center">
+        <div className="container page-padding ">
+          <div className="flex items-center">
+            <h2 className="text-white font-bold text-[3.7rem] max-w-6xl px-7 leading-[1.2] ">
+              We Are Always Providing Best Fitness Service For You
+            </h2>
+            <MainButton
+              color={`text-black`}
+              bg={`bg-white`}
+              text="Join With Us"
+              arrowColor={`text-black`}
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

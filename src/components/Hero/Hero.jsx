@@ -24,7 +24,11 @@ function Hero() {
               <span className="font-thin">fit & perfect</span>
             </h1>
 
-            <MainButton color={`text-black`} bg={`bg-white`} />
+            <MainButton
+              color={`text-black`}
+              bg={`bg-white`}
+              text="our classes"
+            />
           </div>
         </div>
         {/* socials */}

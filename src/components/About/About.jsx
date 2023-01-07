@@ -82,6 +82,7 @@ function About() {
                 cN="about-cta"
                 arrowColor={`text-white`}
                 hover={`hover:bg-[#FF0336]`}
+                text="our classes"
               />
             </div>
             {/* img side */}
