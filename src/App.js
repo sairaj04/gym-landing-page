@@ -3,6 +3,7 @@ import ChooseUs from "./components/ChooseUs/ChooseUs";
 import Featured from "./components/Featured/Featured";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Nav/Navbar";
+import Trainers from "./components/Trainers/Trainers";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Featured />
       <ChooseUs />
+      <Trainers />
     </>
   );
 }

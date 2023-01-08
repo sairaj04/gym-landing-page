@@ -11,7 +11,7 @@ function ChooseUs() {
   return (
     <>
       <section className="choose-section py-[12rem] ">
-        <div className="container page-padding flex flex-row gap-20">
+        <div className="container page-padding flex flex-row gap-[7rem]">
           <div className="video-div relative w-[50%]">
             <img src={VideoImg} alt="video_img" className="relative" />
             <img
@@ -35,9 +35,10 @@ function ChooseUs() {
               We Can Give A Shape Of Your Body Here!
             </h2>
             <p className="text-[16.5px] text-[#b4b4b4] mt-7 max-w-3xl">
-              Gymat an unknown printer took a galley of type and scraey aretea
-              mbled it to make a type specimen book. May has survived not only
-              five centuries, but also the leap into electronic.
+              At <b>Gymate</b>, we are dedicated to helping you achieve the body
+              of your dreams. Our expert trainers and nutritionists will work
+              with you to create a personalized fitness and nutrition plan that
+              helps you reach your specific goals.
             </p>
 
             <div className="grid grid-cols-2 grid-rows-2 gap-14 max-w-[44rem] mt-14">

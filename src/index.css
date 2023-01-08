@@ -441,7 +441,7 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%)rotate(174deg);
   transform: translateY(-50%)rotate(174deg);
-  right: 30px;
+  right: 10px;
 }
 
 .video-div::after {
@@ -465,6 +465,25 @@ body {
 
 .choose-cta:hover:after {
   border: 2px solid #FF0336;
+}
+
+/* trainers section */
+
+.trainers-section {
+  background-image: url('../src/images/trainers/dot-bg.png');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.trainers-section::after {
+  content: url('../src/images/trainers/bg-attachment.png');
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* scrollbar ------------------------- */

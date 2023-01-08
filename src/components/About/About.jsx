@@ -35,9 +35,9 @@ function About() {
                 Take Your Health And Body To Next Level
               </h2>
               <p className="text-[16px] text-[#646464] font-medium ">
-                Gymat an unknown printer took a galley of type and scr arsry it
-                to make a type specimen book. It has survived notte only five
-                centuri but also the.
+                Take your health and body to the next level with our
+                comprehensive program designed to help you reach your fitness
+                goals.
               </p>
               {/* about text icons */}
               <div className="flex mt-12 mb-[7rem] gap-[2px]">
