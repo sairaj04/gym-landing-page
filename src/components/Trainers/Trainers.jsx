@@ -1,12 +1,13 @@
 import TitleRed from "../../images/who-we-are/title-bg.svg";
 import TrainerBox from "./TrainerBox";
+import TestiImg from "../../images/testimonials/main.jpg";
 
 function Trainers() {
   return (
     <>
       <section className="trainers-section">
         <div className="container page-padding py-[12rem]">
-          {/* title div */}
+          {/* title div -- */}
           <div className="flex flex-col text-center relative">
             <p className="text-white relative z-10 text-[16px] uppercase font-bold mb-10">
               gym trainers
@@ -26,9 +27,21 @@ function Trainers() {
             </p>
           </div>
 
-          {/* trainers div */}
+          {/* trainers div -- */}
           <div className="flex mt-14">
             <TrainerBox />
+          </div>
+
+          {/* trainers testimonials -- */}
+          <div className="flex mt-[18rem]">
+            {/* img side */}
+            <div className="">
+              <div className="">
+                <img src={TestiImg} alt="testimonials_img" />
+              </div>
+            </div>
+            {/* testimonials side */}
+            <div className="bg-[#ff0336] w-[56%]"></div>
           </div>
         </div>
       </section>
