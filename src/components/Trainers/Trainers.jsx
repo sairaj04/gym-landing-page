@@ -1,4 +1,5 @@
 import TitleRed from "../../images/who-we-are/title-bg.svg";
+import TrainerBox from "./TrainerBox";
 
 function Trainers() {
   return (
@@ -23,6 +24,11 @@ function Trainers() {
               Expert team of coaches helps you succeed in any goal,
               <br /> personalized guidance and motivation provided!
             </p>
+          </div>
+
+          {/* trainers div */}
+          <div className="flex mt-14">
+            <TrainerBox />
           </div>
         </div>
       </section>
