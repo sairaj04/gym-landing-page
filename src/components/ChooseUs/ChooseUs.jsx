@@ -29,7 +29,7 @@ function ChooseUs() {
             <img
               src={TitleRed}
               alt="text_bg"
-              className="w-[37%] absolute -top-[6px] -left-14 "
+              className="w-[22rem] absolute -top-[6px] -left-14 "
             />
             <h2 className=" text-[3.6rem] text-white font-bold leading-[1.2] max-w-3xl">
               We Can Give A Shape Of Your Body Here!

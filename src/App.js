@@ -3,6 +3,7 @@ import ChooseUs from "./components/ChooseUs/ChooseUs";
 import Featured from "./components/Featured/Featured";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Nav/Navbar";
+import Testimonials from "./components/Testimonials/Testimonials";
 import Trainers from "./components/Trainers/Trainers";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Featured />
       <ChooseUs />
       <Trainers />
+      <Testimonials />
     </>
   );
 }

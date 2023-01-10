@@ -14,7 +14,7 @@ function Featured() {
             <img
               src={TitleRed}
               alt="text_bg"
-              className="w-[20%] absolute -top-[10px]"
+              className="w-[24rem] absolute -top-[10px]"
             />
             <h2 className="text-[3.6rem] text-black font-bold my-10">
               We Are Offering Best Flexible Classes
