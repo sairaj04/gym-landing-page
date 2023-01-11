@@ -1,7 +1,11 @@
 import TestimonialImg from "../../images/testimonials/testimonial-new.jpg";
-import Quotes from "../../images/testimonials/quotes.png";
-import BoxShape from "../../images/testimonials/testimonial-shape.svg";
 import TitleBg from "../../images/pricing/titlebg.svg";
+import TestimonialBoxes from "./TestimonialBoxes";
+import Logo1 from "../../images/testimonials/logo1.png";
+import Logo2 from "../../images/testimonials/logo2.png";
+import Logo3 from "../../images/testimonials/logo3.png";
+import Logo4 from "../../images/testimonials/logo4.png";
+import Logo5 from "../../images/testimonials/logo5.png";
 
 function Testimonials() {
   return (
@@ -34,45 +38,60 @@ function Testimonials() {
               {/* all text-boxes */}
               <div className="flex">
                 {/* text box */}
-                <div className="absolute flex flex-col bg-black  top-0 right-0 w-[60%] h-full py-[47px] px-[55px]">
-                  <img alt="quote_img" src={Quotes} className="w-[6rem]" />
-                  <p className=" text-[16px] italic text-[#dedede] my-6 z-10">
-                    “I've been a member of Gymate for the past 6 months and it
-                    has been an amazing experience. The trainers are
-                    knowledgeable and supportive, the equipment is top-notch,
-                    and the community of members is friendly and encouraging.”
-                  </p>
-                  <h3 className="text-white text-[21px] mb-1 font-bold">
-                    Harry Potter
-                  </h3>
-                  <p className="text-[14px] font-medium text-[#dedede]">
-                    CEO of Hogwarts
-                  </p>
-                  <img
-                    alt="box_img"
-                    src={BoxShape}
-                    className="w-[17.5rem] absolute bottom-0 right-[13.5rem] invert opacity-40"
-                  />
-                </div>
+                <TestimonialBoxes />
               </div>
 
               {/* buttons */}
-              <div className="flex gap-3 absolute bottom-[25px] right-[35px]">
+              <div className="flex gap-3 absolute bottom-[25px] right-[35px] z-20">
                 <button
                   style={{ transition: "all 0.2s" }}
                   className="py-5 px-7 bg-white text-black text-2xl hover:bg-[#FF0336] hover:text-white"
                 >
-                  <i class="fa-solid fa-arrow-left"></i>
+                  <i className="fa-solid fa-arrow-left"></i>
                 </button>
                 <button
                   style={{ transition: "all 0.2s" }}
                   className="py-5 px-7 bg-white text-black text-2xl hover:bg-[#FF0336] hover:text-white"
                 >
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <i className="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* brand logos */}
+        <div className="flex gap-5 justify-center mt-32 border-b border-solid border-[#64646438] pb-28">
+          <img
+            src={Logo1}
+            alt="logo"
+            className="scale-[.8] hover:invert"
+            style={{ transition: "all 0.3s" }}
+          />
+          <img
+            src={Logo2}
+            alt="logo"
+            className=" scale-[.8] hover:invert"
+            style={{ transition: "all 0.3s" }}
+          />
+          <img
+            src={Logo3}
+            alt="logo"
+            className=" scale-[.8] hover:invert"
+            style={{ transition: "all 0.3s" }}
+          />
+          <img
+            src={Logo4}
+            alt="logo"
+            className=" scale-[.8] hover:invert"
+            style={{ transition: "all 0.3s" }}
+          />
+          <img
+            src={Logo5}
+            alt="logo"
+            className=" scale-[.8] hover:invert"
+            style={{ transition: "all 0.3s" }}
+          />
         </div>
       </section>
     </>

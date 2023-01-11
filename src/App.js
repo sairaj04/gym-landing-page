@@ -1,6 +1,8 @@
 import About from "./components/About/About";
+import BmiCalc from "./components/BMI/BmiCalc";
 import ChooseUs from "./components/ChooseUs/ChooseUs";
 import Featured from "./components/Featured/Featured";
+import Gallery from "./components/Gallery/Gallery";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Nav/Navbar";
 import Testimonials from "./components/Testimonials/Testimonials";
@@ -16,6 +18,8 @@ function App() {
       <ChooseUs />
       <Trainers />
       <Testimonials />
+      <Gallery />
+      <BmiCalc />
     </>
   );
 }
