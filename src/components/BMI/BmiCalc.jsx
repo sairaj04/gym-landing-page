@@ -1,4 +1,30 @@
+import { useState } from "react";
+
 function BmiCalc() {
+  const [weight, setWeight] = useState(0);
+  const [height, setHeight] = useState(0);
+  const [bmi, setBmi] = useState("");
+  const [message, setMessage] = useState("");
+
+  let calcBmi = (e) => {
+    e.preventDefault();
+    if (weight === 0 || height === 0) {
+      alert("Please enter a valid weight and height");
+    } else {
+      let bmi = weight / ((height * height) / 10000);
+      setBmi(bmi.toFixed(1));
+
+      // logic for message
+      if (bmi < 20) {
+        setMessage("Underweight");
+      } else if (bmi >= 20 && bmi < 27) {
+        setMessage("Normal");
+      } else {
+        setMessage("Overweight");
+      }
+    }
+  };
+
   return (
     <>
       <section className="bmi-section py-[6rem]">
@@ -14,21 +40,33 @@ function BmiCalc() {
             <div className="flex flex-col">
               <form className="flex w-full gap-6 h-[50px] mt-10 ">
                 <input
+                  onChange={(e) => setWeight(e.target.value)}
+                  value={weight}
                   className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6"
                   type="text"
                   placeholder="Weight / kg"
                 ></input>
                 <input
+                  onChange={(e) => setHeight(e.target.value)}
+                  value={height}
                   className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6"
                   type="text"
                   placeholder="Height / cm"
                 ></input>
               </form>
               {/* output */}
-              <p className="mt-10 gap-3 text-[16px] font-medium flex items-center ">
-                <span>Your BMI is:</span> <span>Your weight is:</span>
+              <p className="mt-10 gap-3 text-[16px] font-medium flex items-center w-full ">
+                <span className="w-1/2">
+                  Your BMI is: &nbsp;
+                  <span className="text-[#ff0336]">{bmi}</span>
+                </span>
+                <span className="w-1/2">
+                  Your weight is: &nbsp;
+                  <span className="text-[#ff0336]">{message}</span>
+                </span>
               </p>
               <button
+                onClick={calcBmi}
                 style={{ transition: "all 0.3s" }}
                 type="submit"
                 className="text-[15px] uppercase font-bold mt-10 bg-[#323232] w-[15rem] h-[5rem] hover:bg-[#FF0336]"
