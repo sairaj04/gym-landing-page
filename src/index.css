@@ -612,6 +612,31 @@ body {
   background-repeat: no-repeat;
 }
 
+/* price section */
+
+.pricing-section {
+  background-image: url('../src/images/pricing/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pricing-cta {
+  transition: all 0.4s;
+  margin-top: 4rem;
+}
+
+.pricing-cta::after {
+  border: 2px solid #ff03353b;
+
+}
+
+.pricing-cta:hover:after {
+  border: 2px solid #FF0336;
+}
+
+
 /* scrollbar ------------------------- */
 
 /* Firefox */

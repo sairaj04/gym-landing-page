@@ -41,14 +41,12 @@ function BmiCalc() {
               <form className="flex w-full gap-6 h-[50px] mt-10 ">
                 <input
                   onChange={(e) => setWeight(e.target.value)}
-                  value={weight}
                   className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6"
                   type="text"
                   placeholder="Weight / kg"
                 ></input>
                 <input
                   onChange={(e) => setHeight(e.target.value)}
-                  value={height}
                   className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6"
                   type="text"
                   placeholder="Height / cm"
