@@ -4,28 +4,52 @@ function NavList() {
   return (
     <>
       <ul className="flex gap-9 text-white text-[16px] font-medium">
-        <li className=" cursor-pointer">
+        <li
+          style={{ transition: "all 0.3s" }}
+          className=" cursor-pointer hover:text-[#ff0336]"
+        >
           <Link>Home</Link>
         </li>
-        <li className=" cursor-pointer">
+        <li
+          style={{ transition: "all 0.3s" }}
+          className=" cursor-pointer hover:text-[#ff0336]"
+        >
           <Link>About</Link>
         </li>
-        <li className=" cursor-pointer">
+        <li
+          style={{ transition: "all 0.3s" }}
+          className=" cursor-pointer hover:text-[#ff0336]"
+        >
           <Link>Featured</Link>
         </li>
-        <li className=" cursor-pointer">
+        <li
+          style={{ transition: "all 0.3s" }}
+          className=" cursor-pointer hover:text-[#ff0336]"
+        >
           <Link>Team</Link>
         </li>
-        <li className=" cursor-pointer">
+        <li
+          style={{ transition: "all 0.3s" }}
+          className=" cursor-pointer hover:text-[#ff0336]"
+        >
           <Link>Gallery</Link>
         </li>
-        <li className=" cursor-pointer">
+        <li
+          style={{ transition: "all 0.3s" }}
+          className=" cursor-pointer hover:text-[#ff0336]"
+        >
           <Link>Pricing</Link>
         </li>
-        <li className=" cursor-pointer">
+        <li
+          style={{ transition: "all 0.3s" }}
+          className=" cursor-pointer hover:text-[#ff0336]"
+        >
           <Link>Blog</Link>
         </li>
-        <li className=" cursor-pointer">
+        <li
+          style={{ transition: "all 0.3s" }}
+          className=" cursor-pointer hover:text-[#ff0336]"
+        >
           <Link>Contact</Link>
         </li>
       </ul>

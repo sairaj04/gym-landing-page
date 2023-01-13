@@ -25,10 +25,25 @@ function Blog() {
           </div>
 
           {/* blog boxes */}
-          <div className="flex gap-6 w-full">
-            <BlogBox />
-            <BlogBox />
-            <BlogBox />
+          <div className="flex gap-6 w-full mt-[5rem]">
+            <BlogBox
+              bgClass="box1Bg"
+              date="22.03.2022"
+              title="Yoga For Everyone in 2023"
+              description="This is program designed to make the practice of yoga beneficial for people of all ages, abilities, and backgrounds. "
+            />
+            <BlogBox
+              bgClass="box2Bg"
+              date="13.09.2022"
+              title="Getting Back Into CrossFit After Vacation"
+              description="Learn how to ease back into your CrossFit routine after a vacation with tips and strategies for success."
+            />
+            <BlogBox
+              bgClass="box3Bg"
+              date="28.06.2022"
+              title="Meet Fitness Ambassador Grace"
+              description="Get to know Grace, a fitness enthusiast and dedicated ambassador who is passionate about helping others reach their fitness goals."
+            />
           </div>
         </div>
       </section>

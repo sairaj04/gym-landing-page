@@ -4,7 +4,7 @@ import MainButton from "../MainButton";
 function Hero() {
   return (
     <>
-      <section className="hero-section w-full h-screen">
+      <section id="homeID" className="hero-section w-full h-screen">
         <div className="container-hero">
           {/* hero section */}
           <div

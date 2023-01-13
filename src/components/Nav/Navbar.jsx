@@ -37,7 +37,7 @@ function Navbar() {
         <NavList />
         <div className="flex items-center gap-10">
           <div className="flex gap-10">
-            <i className="fa-solid fa-magnifying-glass text-white text-4xl cursor-pointer"></i>
+            <i class="fa-regular fa-user  text-white text-4xl cursor-pointer"></i>
             <i className="fa-regular fa-chart-bar text-white text-4xl cursor-pointer"></i>
           </div>
           <div className="border-[rgb(255,255,255,0.3)] border-solid border-2  p-2 rounded-md">

@@ -636,6 +636,24 @@ body {
   border: 2px solid #FF0336;
 }
 
+/* blog section */
+.cta-section {
+  background-image: url('../src//images/call/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* cta banner */
+
+.cta-banner-btn {
+  padding: 18px 22px;
+}
+
+/* footer */
+
+
 
 /* scrollbar ------------------------- */
 
