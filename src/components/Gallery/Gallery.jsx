@@ -34,7 +34,7 @@ function Gallery() {
           </div>
 
           {/* gallery */}
-          <div className="gallery-grid py-24 w-full h-auto relative">
+          <div className="gallery-grid py-24 w-full h-auto relative min450:hidden">
             <div id="item-0"></div>
             <div id="item-1"></div>
             <div id="item-2"></div>

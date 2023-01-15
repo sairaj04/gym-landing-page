@@ -26,7 +26,7 @@ function Testimonials() {
           </div>
 
           {/* testimonials wrapper */}
-          <div className="border-[#efefef] mt-[17rem] md1000:mt-[9rem] bg-white border-solid border-[9px] p-[30px]">
+          <div className="border-[#efefef] mt-[17rem] md1000:mt-[9rem] bg-white border-solid border-[9px] p-[30px] min540:h-[48rem] min375:h-[60rem]">
             <div className="bg-black overflow-x-clip w-full h-[33rem] relative">
               {/* img */}
               <img
@@ -42,7 +42,7 @@ function Testimonials() {
               </div>
 
               {/* buttons */}
-              <div className="flex gap-3 absolute bottom-[25px] right-[35px] z-20">
+              <div className="flex gap-3 absolute bottom-[25px] right-[35px] z-20 min540:-bottom-[52px] min540:right-[17px]">
                 <button
                   style={{ transition: "all 0.2s" }}
                   className="py-5 px-7 bg-white text-black text-2xl hover:bg-[#FF0336] hover:text-white"

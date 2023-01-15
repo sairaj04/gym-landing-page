@@ -652,6 +652,12 @@ body {
   padding: 18px 22px;
 }
 
+/* gallery */
+
+.gallery-cta {
+  display: none;
+}
+
 /* MEDIA QUERIES --------------------------------*/
 
 @media (max-width: 1200px) {

@@ -54,12 +54,12 @@ function Navbar() {
             <i className="fa-regular fa-user  text-white text-4xl cursor-pointer"></i>
             <i className="fa-regular fa-chart-bar text-white text-4xl cursor-pointer"></i>
           </div>
-          <div className="border-[rgb(255,255,255,0.3)] border-solid border-2  p-2 rounded-md">
+          <div className="border-[rgb(255,255,255,0.3)] border-solid border-2  p-2 rounded-md min620:hidden">
             <Link
               to={"/contact"}
               onMouseEnter={joinSpin}
               onMouseLeave={stopSpin}
-              className="flex items-center"
+              className="flex items-center "
             >
               <i
                 className={`fa-solid fa-plus bg-[#FF0336] text-white text-2xl py-3 px-4 rounded-md ${

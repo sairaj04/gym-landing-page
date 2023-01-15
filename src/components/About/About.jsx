@@ -34,7 +34,7 @@ function About() {
                 alt="text_bg"
                 className="w-[31%] absolute -top-[6px] md1000:w-[22rem]"
               />
-              <h2 className="text-[35px] font-bold leading-tight mb-6 w-[60rem]">
+              <h2 className="text-[35px] font-bold leading-tight mb-6 w-[60rem] min800:w-[100%]">
                 Take Your Health And Body To Next Level
               </h2>
               <p className="text-[16px] text-[#646464] font-medium ">
@@ -43,8 +43,8 @@ function About() {
                 goals.
               </p>
               {/* about text icons */}
-              <div className="flex mt-12 mb-[7rem] gap-[2px]">
-                <div className="flex flex-col  items-center text-center py-10 px-14 pl-7">
+              <div className="flex mt-12 mb-[7rem] gap-[2px] min620:flex-col ">
+                <div className="flex flex-col  items-center text-center py-10 px-14 pl-7 min620:px-0">
                   <img
                     src={TrainersIcon}
                     alt="icon_img"
@@ -55,7 +55,7 @@ function About() {
                   </h3>
                 </div>
 
-                <div className="flex flex-col items-center text-center border-solid border-l border-[rgb(0,0,0,0.2)] border-r py-10 px-14 ">
+                <div className="flex flex-col items-center text-center border-solid border-l border-[rgb(0,0,0,0.2)] border-r py-10 px-14 min620:px-0 min620:border-none">
                   <img
                     src={ModernIcon}
                     alt="icon_img"
@@ -66,7 +66,7 @@ function About() {
                   </h3>
                 </div>
 
-                <div className="flex flex-col items-center text-center py-10 px-14 pr-2">
+                <div className="flex flex-col items-center text-center py-10 px-14 pr-2 min620:px-0">
                   <img
                     src={LiftIcon}
                     alt="icon_img"

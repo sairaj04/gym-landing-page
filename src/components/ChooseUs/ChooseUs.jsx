@@ -17,7 +17,7 @@ function ChooseUs() {
             <img
               src={PlayImg}
               alt="play_img"
-              className="absolute w-[2.4rem] top-[42%] left-[44%] z-10 cursor-pointer "
+              className="absolute w-[2.4rem] top-[43%] left-[46%] z-10 cursor-pointer "
             />
             <span className="bg-white cursor-pointer p-14 absolute rounded-full top-[38.7%] left-[39.9%]"></span>
           </div>
@@ -41,7 +41,7 @@ function ChooseUs() {
               helps you reach your specific goals.
             </p>
 
-            <div className="grid grid-cols-2 grid-rows-2 gap-14 max-w-[44rem] mt-14">
+            <div className="grid grid-cols-2 grid-rows-2 gap-14 max-w-[44rem] mt-14 min450:flex min450:flex-col">
               <div className="flex items-center gap-6">
                 <img
                   className="bg-[#2b2b2b] hover:bg-[#ff0336] ease-in duration-200 w-[6.5rem] rounded-full p-4"
