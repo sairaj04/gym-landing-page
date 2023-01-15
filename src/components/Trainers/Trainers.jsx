@@ -4,17 +4,17 @@ import TrainerBox from "./TrainerBox";
 function Trainers() {
   return (
     <>
-      <section className="trainers-section">
+      <section id="team" className="trainers-section">
         <div className="container page-padding py-[12rem]">
           {/* title div -- */}
-          <div className="flex flex-col text-center relative w-[117rem]">
+          <div className="flex flex-col items-center text-center relative">
             <p className="text-white relative z-10 text-[16px] uppercase font-bold mb-10">
               gym trainers
             </p>
             <img
               src={TitleRed}
               alt="text_bg"
-              className="w-[21rem] absolute -top-[6px] left-[48.5rem] "
+              className="w-[21rem] absolute -top-[6px]"
             />
 
             <h2 className="text-[3.4rem] font-bold mb-4">
@@ -27,7 +27,7 @@ function Trainers() {
           </div>
 
           {/* trainers div -- */}
-          <div className="flex mt-20">
+          <div className="flex mt-20 ">
             <TrainerBox />
           </div>
         </div>

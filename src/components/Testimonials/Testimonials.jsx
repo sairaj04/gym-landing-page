@@ -11,28 +11,28 @@ function Testimonials() {
   return (
     <>
       {/* testimonials div */}
-      <section className="my-[10rem] w-[107rem] mx-auto">
-        <div className="container pagepadding">
+      <section className="my-[10rem] mx-auto">
+        <div className="container page-padding">
           {/* title */}
-          <div className="text-center relative">
+          <div className="text-center relative items-center w-full flex flex-col">
             <p className="text-white relative z-10 text-[16px] uppercase font-bold -mb-[10.5rem]">
               Testimonials
             </p>
             <img
               alt="title_img"
               src={TitleBg}
-              className="w-[21rem] absolute -top-[6px] left-[43rem]"
+              className="w-[21rem] absolute -top-[6px] "
             />
           </div>
 
           {/* testimonials wrapper */}
-          <div className="border-[#efefef] mt-[17rem] bg-white border-solid border-[9px] p-[30px]">
+          <div className="border-[#efefef] mt-[17rem] md1000:mt-[9rem] bg-white border-solid border-[9px] p-[30px]">
             <div className="bg-black overflow-x-clip w-full h-[33rem] relative">
               {/* img */}
               <img
                 alt="girl_img"
                 src={TestimonialImg}
-                className="absolute bottom-0 -left-10 z-20 h-[46rem] rounded-tr-[200px]"
+                className="absolute bottom-0 -left-10 z-20 h-[46rem] rounded-tr-[200px] md1000:hidden"
               />
 
               {/* all text-boxes */}
@@ -61,7 +61,10 @@ function Testimonials() {
         </div>
 
         {/* brand logos */}
-        <div className="flex gap-5 justify-center mt-32 border-b border-solid border-[#64646438] pb-28">
+        <div
+          className="flex gap-5 justify-center mt-32 border-b border-solid border-[#64646438] pb-28 flex-wrap
+        "
+        >
           <img
             src={Logo1}
             alt="logo"

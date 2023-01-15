@@ -26,6 +26,14 @@ function Navbar() {
 
   window.addEventListener("scroll", handleScroll);
 
+  // logo
+  const goTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <nav
@@ -33,15 +41,22 @@ function Navbar() {
           sticky ? "bg-black shadow-xl" : ""
         }`}
       >
-        <img src={Logo} alt="logo_img" />
-        <NavList />
+        <Link to="/">
+          <img src={Logo} alt="logo_img" onClick={goTop} />
+        </Link>
+        <div className="navlist-nav">
+          <NavList />
+        </div>
         <div className="flex items-center gap-10">
           <div className="flex gap-10">
-            <i class="fa-regular fa-user  text-white text-4xl cursor-pointer"></i>
+            {/* mobile menu */}
+            <i className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer"></i>
+            <i className="fa-regular fa-user  text-white text-4xl cursor-pointer"></i>
             <i className="fa-regular fa-chart-bar text-white text-4xl cursor-pointer"></i>
           </div>
           <div className="border-[rgb(255,255,255,0.3)] border-solid border-2  p-2 rounded-md">
             <Link
+              to={"/contact"}
               onMouseEnter={joinSpin}
               onMouseLeave={stopSpin}
               className="flex items-center"

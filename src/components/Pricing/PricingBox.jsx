@@ -3,7 +3,7 @@ import MainButton from "../MainButton";
 function PricingBox({ img, price }) {
   return (
     <>
-      <div className="flex flex-col w-1/3 bg-white shadow-xl relative">
+      <div className="flex flex-col w-1/3 md1000:w-[40rem] bg-white shadow-xl relative">
         <div
           style={{ transition: "all 0.3s" }}
           className="relative grayscale hover:grayscale-0"

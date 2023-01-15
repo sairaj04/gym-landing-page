@@ -15,21 +15,24 @@ function About() {
       <section className="flex flex-col justify-between gap-2 about-section pb-[20rem]">
         <div className="container page-padding">
           {/* about cards */}
-          <div className="flex gap-10 -mt-[8.5rem]">
+          <div className="about-cards flex gap-10 -mt-[8.5rem] md1000:flex-col">
             <AboutCarts />
           </div>
 
           {/* text-img div */}
-          <div className=" grid grid-cols-[50fr,50fr] gap-[3rem]">
+          <div
+            id="about"
+            className=" grid grid-cols-[50fr,50fr] gap-[3rem] md1000:grid-cols-1"
+          >
             {/* about text */}
-            <div className="mt-[10.5rem] relative">
-              <p className="text-white font-semibold text-[15px] relative uppercase z-10 pl-16 mb-12">
+            <div className="mt-[10.5rem] relative md1000:items-center md1000:flex md1000:flex-col md1000:text-center md1000:w-[full]">
+              <p className="text-white font-semibold text-[15px] relative uppercase z-10 pl-16 md1000:pl-0 mb-12">
                 who we are
               </p>
               <img
                 src={TitleRed}
                 alt="text_bg"
-                className="w-[31%] absolute -top-[6px]"
+                className="w-[31%] absolute -top-[6px] md1000:w-[22rem]"
               />
               <h2 className="text-[35px] font-bold leading-tight mb-6 w-[60rem]">
                 Take Your Health And Body To Next Level
@@ -86,7 +89,7 @@ function About() {
               />
             </div>
             {/* img side */}
-            <div className="relative">
+            <div className="relative md1000:hidden">
               <img
                 src={GirlRunning}
                 alt="girl_running"

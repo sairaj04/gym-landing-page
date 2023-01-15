@@ -4,7 +4,7 @@ import BgIcon from "../../images/gallery/bg-icon.png";
 function Gallery() {
   return (
     <>
-      <section className="relative">
+      <section id="gallery" className="relative">
         <img
           src={BgIcon}
           alt="bg_img"
@@ -13,14 +13,14 @@ function Gallery() {
 
         <div className="container page-padding py-[4rem]">
           {/* title div -- */}
-          <div className="flex flex-col text-center relative w-[117rem]">
+          <div className="flex flex-col text-center relative items-center ">
             <p className="text-white relative z-10 text-[15px] uppercase font-bold mb-10">
               GYMAT GALLERY
             </p>
             <img
               src={TitleRed}
               alt="text_bg"
-              className="w-[23rem] absolute -top-[10px] left-[47rem] "
+              className="w-[23rem] absolute -top-[10px]  "
             />
 
             <h2 className="text-[3.4rem] font-bold mb-4">

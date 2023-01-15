@@ -3,7 +3,7 @@ import BoxShape from "../../images/testimonials/testimonial-shape.svg";
 
 function TestimonialBox({ text, name, job }) {
   return (
-    <div className="absolute flex flex-col bg-black  top-0 right-0 w-[60%] h-full py-[47px] px-[50px]">
+    <div className="absolute flex flex-col bg-black  top-0 right-0 w-[60%] md1000:w-full h-full py-[47px] px-[50px]">
       <img alt="quote_img" src={Quotes} className="w-[6rem]" />
       <p className=" text-[16px] italic text-[#dedede] my-6 z-10">{text}</p>
       <h3 className="text-white text-[21px] mb-1 font-bold">{name}</h3>

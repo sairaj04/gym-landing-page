@@ -25,7 +25,7 @@ function TrainerBox() {
   return (
     <>
       <div
-        className="flex justify-center gap-[5rem]"
+        className="flex justify-center gap-[5rem] md1200:flex-wrap"
         style={{ margin: "0 auto" }}
       >
         {trainers.map((train, id) => (

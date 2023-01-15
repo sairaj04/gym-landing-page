@@ -107,6 +107,7 @@ body {
 .about-cta {
   padding: 1.82rem 3.6rem;
   transition: all 0.3s;
+  width: 21rem;
 }
 
 .about-cta::after {
@@ -651,9 +652,17 @@ body {
   padding: 18px 22px;
 }
 
-/* footer */
+/* MEDIA QUERIES --------------------------------*/
 
+@media (max-width: 1200px) {
+  .navlist-nav {
+    display: none;
+  }
 
+  .fa-bars {
+    display: flex;
+  }
+}
 
 /* scrollbar ------------------------- */
 
@@ -661,6 +670,7 @@ body {
 * {
   scrollbar-width: thin;
   scrollbar-color: #A0A0A0 #FFFFFF;
+  scroll-behavior: smooth;
 }
 
 /* Chrome, Edge and Safari */
