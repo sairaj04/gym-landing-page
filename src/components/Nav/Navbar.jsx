@@ -2,10 +2,18 @@ import { useState } from "react";
 import Logo from "../../images/logo/logo.svg";
 import NavList from "../Nav/NavList";
 import { Link } from "react-router-dom";
+import LogoSide from "../../images/logo/logo-footer.svg";
+import SideImg1 from "../../images/sidebar/1.jpg";
+import SideImg2 from "../../images/sidebar/2.jpg";
+import SideImg3 from "../../images/sidebar/3.jpg";
+import SideImg4 from "../../images/sidebar/4.jpg";
+import SideImg5 from "../../images/sidebar/5.jpg";
+import SideImg6 from "../../images/sidebar/6.jpg";
 
 function Navbar() {
   const [spin, setSpin] = useState(false);
   const [sticky, setSticky] = useState(false);
+  const [sidebar, setSideBar] = useState(false);
 
   const joinSpin = () => {
     setSpin(true);
@@ -34,6 +42,11 @@ function Navbar() {
     });
   };
 
+  // sidebar
+  const sideBar = () => {
+    setSideBar(!sidebar);
+  };
+
   return (
     <>
       <nav
@@ -50,9 +63,112 @@ function Navbar() {
         <div className="flex items-center gap-10">
           <div className="flex gap-10">
             {/* mobile menu */}
-            <i className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer"></i>
-            <i className="fa-regular fa-user  text-white text-4xl cursor-pointer"></i>
-            <i className="fa-regular fa-chart-bar text-white text-4xl cursor-pointer"></i>
+
+            {/* sidebar */}
+
+            <div>
+              <div
+                className={`flex flex-col fixed w-[40rem] min450:w-full h-[100vh] bg-white top-0 left-0 z-[9999999999] p-[45px] gap-24 overflow-x-hidden ease-in-out duration-[0.5s] ${
+                  sidebar ? "left-0" : "-left-[100%]"
+                }`}
+              >
+                {/* logo & X */}
+                <div className="flex justify-between items-center">
+                  <img src={LogoSide} alt="logo_img" className="w-[13rem]" />
+                  <i
+                    onClick={sideBar}
+                    className="fa-solid fa-xmark text-[#ff0336] text-[3.3rem] cursor-pointer"
+                  ></i>
+                </div>
+                {/* about us */}
+                <div className="flex flex-col gap-6">
+                  <h3 className="text-[2rem] font-bold">About Us</h3>
+                  <p className="text-[1.6rem] font-medium text-[#000000b1]">
+                    Gymat an unknown printer took galle type anscraey aretea
+                    bled make a type specimen bookayurvived not onlyive
+                    centuries. Gymat an unknown printer took galle type
+                    anscraey.
+                  </p>
+                </div>
+                {/* gallery */}
+                <div className="flex flex-col gap-6">
+                  <h3 className="text-[2rem] font-bold">Gallery</h3>
+                  <div className="grid grid-cols-3 grid-rows-2 gap-4">
+                    <img
+                      src={SideImg1}
+                      alt="sidebar_gallery"
+                      className="rounded-xl cursor-pointer "
+                    />
+                    <img
+                      src={SideImg2}
+                      alt="sidebar_gallery"
+                      className="rounded-xl cursor-pointer "
+                    />
+                    <img
+                      src={SideImg3}
+                      alt="sidebar_gallery"
+                      className="rounded-xl cursor-pointer "
+                    />
+                    <img
+                      src={SideImg4}
+                      alt="sidebar_gallery"
+                      className="rounded-xl cursor-pointer "
+                    />
+                    <img
+                      src={SideImg5}
+                      alt="sidebar_gallery"
+                      className="rounded-xl cursor-pointer "
+                    />
+                    <img
+                      src={SideImg6}
+                      alt="sidebar_gallery"
+                      className="rounded-xl cursor-pointer "
+                    />
+                  </div>
+                </div>
+                {/* contact */}
+                <div className="flex flex-col gap-6">
+                  <h3 className="text-[2rem] font-bold">Contact Info</h3>
+                  <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#ff0336] cursor-pointer ease-in duration-200">
+                    <i className="fa-solid fa-location-dot text-[#ff0336]"></i>
+                    &nbsp; 59 Street, House Newyork City
+                  </p>
+                  <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#ff0336] cursor-pointer ease-in duration-200">
+                    <i className="fa-solid fa-phone text-[#ff0336]"></i>&nbsp;
+                    +123-678800090
+                  </p>
+                  <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#ff0336] cursor-pointer ease-in duration-200">
+                    <i className="fa-solid fa-envelope text-[#ff0336]"></i>
+                    &nbsp; gymate@gymail.com
+                  </p>
+                </div>
+                {/* follow us */}
+                <div className="flex flex-col gap-6">
+                  <h3 className="text-[2rem] font-bold">Follow Us</h3>
+                  <div className="flex gap-5">
+                    <span className="bg-[#ff0336] rounded-full py-[12px] px-[17px] cursor-pointer">
+                      <i className="fa-brands fa-facebook-f text-[2.2rem] text-white"></i>
+                    </span>
+                    <span className="bg-[#ff0336] rounded-full py-[12px] px-[12px] cursor-pointer">
+                      <i className="fa-brands fa-twitter text-[2.2rem] text-white"></i>
+                    </span>
+                    <span className="bg-[#ff0336] rounded-full py-[10px] px-[13px] cursor-pointer">
+                      <i className="fa-brands fa-instagram text-[2.2rem] text-white"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* hamburger */}
+            <i className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
+            {/* account */}
+            <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
+            {/* sidebar */}
+            <i
+              onClick={sideBar}
+              className="fa-regular fa-chart-bar text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"
+            ></i>
           </div>
           <div className="border-[rgb(255,255,255,0.3)] border-solid border-2  p-2 rounded-md min620:hidden">
             <Link
