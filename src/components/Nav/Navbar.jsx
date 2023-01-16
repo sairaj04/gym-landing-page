@@ -57,7 +57,7 @@ function Navbar() {
     <>
       <nav
         className={`flex flex-row bg-transparent items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full z-50 ${
-          sticky ? "bg-black shadow-xl" : ""
+          sticky ? "shadow-xl !bg-black" : ""
         }`}
       >
         <Link to="/">
@@ -244,7 +244,9 @@ function Navbar() {
               className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"
             ></i>
             {/* account */}
-            <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
+            <Link to="/login">
+              <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
+            </Link>
             {/* sidebar */}
             <i
               onClick={sideBar}
