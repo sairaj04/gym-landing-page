@@ -56,7 +56,7 @@ function Login() {
               type="submit"
               className="bg-[#ff0336] text-white py-4 font-medium text-[2rem] w-full mt-10"
             >
-              Log in
+              Sign Up
             </button>
             <div className="flex gap-4 items-center mt-16">
               <p className="text-white text-[1.5rem]">Already have account?</p>
