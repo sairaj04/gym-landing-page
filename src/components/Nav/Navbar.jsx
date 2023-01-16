@@ -14,6 +14,7 @@ function Navbar() {
   const [spin, setSpin] = useState(false);
   const [sticky, setSticky] = useState(false);
   const [sidebar, setSideBar] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
 
   const joinSpin = () => {
     setSpin(true);
@@ -47,6 +48,11 @@ function Navbar() {
     setSideBar(!sidebar);
   };
 
+  // hamburger menu
+  const hamburgerMenu = () => {
+    setHamburger(!hamburger);
+  };
+
   return (
     <>
       <nav
@@ -62,7 +68,79 @@ function Navbar() {
         </div>
         <div className="flex items-center gap-10">
           <div className="flex gap-10">
-            {/* mobile menu */}
+            {/* mobile menu -------------- */}
+
+            {/* hamburger menu */}
+            <div
+              className={`flex flex-col fixed w-full left-0 h-screen bg-white z-[9999999999] py-[60px] px-[40px] ease-in-out duration-500  ${
+                hamburger ? "top-0" : "-top-[100%]"
+              }`}
+            >
+              <i
+                onClick={hamburgerMenu}
+                className="fa-solid fa-xmark text-[#ff0336] text-[3.3rem] cursor-pointer self-end"
+              ></i>
+
+              {/* links */}
+              <ul className="text-center flex flex-col gap-10 absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                <li onClick={hamburgerMenu}>
+                  <a
+                    className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
+                    href="#home"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li onClick={hamburgerMenu}>
+                  <a
+                    className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
+                    href="#about"
+                  >
+                    About
+                  </a>
+                </li>
+                <li onClick={hamburgerMenu}>
+                  <a
+                    className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
+                    href="#featured"
+                  >
+                    Featured
+                  </a>
+                </li>
+                <li onClick={hamburgerMenu}>
+                  <a
+                    className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
+                    href="#team"
+                  >
+                    Team
+                  </a>
+                </li>
+                <li onClick={hamburgerMenu}>
+                  <Link
+                    className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
+                    to="/contact"
+                  >
+                    Contact
+                  </Link>
+                </li>
+                <li onClick={hamburgerMenu}>
+                  <a
+                    className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
+                    href="#pricing"
+                  >
+                    Pricing
+                  </a>
+                </li>
+                <li onClick={hamburgerMenu}>
+                  <a
+                    className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
+                    href="#blog"
+                  >
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </div>
 
             {/* sidebar */}
 
@@ -84,10 +162,10 @@ function Navbar() {
                 <div className="flex flex-col gap-6">
                   <h3 className="text-[2rem] font-bold">About Us</h3>
                   <p className="text-[1.6rem] font-medium text-[#000000b1]">
-                    Gymat an unknown printer took galle type anscraey aretea
-                    bled make a type specimen bookayurvived not onlyive
-                    centuries. Gymat an unknown printer took galle type
-                    anscraey.
+                    Find out who we are and what makes us unique. We are a
+                    community-driven gym committed to providing personalized
+                    fitness experiences for all levels of fitness enthusiasts in
+                    a welcoming and supportive environment.
                   </p>
                 </div>
                 {/* gallery */}
@@ -161,7 +239,10 @@ function Navbar() {
             </div>
 
             {/* hamburger */}
-            <i className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
+            <i
+              onClick={hamburgerMenu}
+              className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"
+            ></i>
             {/* account */}
             <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
             {/* sidebar */}
@@ -170,6 +251,7 @@ function Navbar() {
               className="fa-regular fa-chart-bar text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"
             ></i>
           </div>
+          {/* spin box */}
           <div className="border-[rgb(255,255,255,0.3)] border-solid border-2  p-2 rounded-md min620:hidden">
             <Link
               to={"/contact"}
