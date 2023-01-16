@@ -5,19 +5,17 @@ import { Link, useNavigate } from "react-router-dom";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user, logIn } = UserAuth();
+  const { user, signUp } = UserAuth();
   const navigate = useNavigate();
-  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError("");
+
     try {
-      await logIn(email, password);
+      await signUp(email, password);
       navigate("/#home");
     } catch (error) {
       console.log(error);
-      setError(error.message);
     }
   };
   return (
@@ -25,7 +23,7 @@ function Login() {
       <section className="login-section">
         <div className="login-banner relative justify-center flex">
           <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
-            Sign In
+            Sign Up
           </h1>
         </div>
         {/* form  */}
@@ -34,11 +32,6 @@ function Login() {
             onSubmit={handleSubmit}
             className="flex flex-col py-40 px-20 bg-black w-[55rem] min450:w-full  shadow-xl"
           >
-            {error ? (
-              <p className="text-white bg-[#ff0336] font-bold text-[1.6rem] px-10 py-5 text-center mb-10">
-                Wrong email or password
-              </p>
-            ) : null}
             <label className="text-[2rem] text-white mb-3 font-medium ">
               Email
             </label>
@@ -66,12 +59,12 @@ function Login() {
               Log in
             </button>
             <div className="flex gap-4 items-center mt-16">
-              <p className="text-white text-[1.5rem]">New to Gymate?</p>
+              <p className="text-white text-[1.5rem]">Already have account?</p>
               <Link
-                to="/signup"
+                to="/login"
                 className="text-[#ff0336] font-bold text-[1.5rem]"
               >
-                Sign Up
+                Sign In
               </Link>
             </div>
           </form>
