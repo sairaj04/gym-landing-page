@@ -61,7 +61,12 @@ function Navbar() {
         }`}
       >
         <Link to="/">
-          <img src={Logo} alt="logo_img" onClick={goTop} />
+          <img
+            src={Logo}
+            alt="logo_img"
+            onClick={goTop}
+            className="w-full h-auto"
+          />
         </Link>
         <div className="navlist-nav">
           <NavList />
@@ -244,7 +249,7 @@ function Navbar() {
               className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"
             ></i>
             {/* account */}
-            <Link to="/signup">
+            <Link to="/signup" title="signup_button">
               <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
             </Link>
             {/* sidebar */}
