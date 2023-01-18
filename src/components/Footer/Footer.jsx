@@ -3,7 +3,7 @@ import FooterLogo from "../../images/logo/logo-footer.svg";
 function Footer() {
   return (
     <>
-      <footer>
+      <footer className="bg-white">
         <div className="container page-padding py-[10rem]">
           {/* footer div all */}
           <div className="flex justify-between min620:flex-col min620:items-center min620:text-center min620:gap-[5rem]">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { UserAuth } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -9,12 +10,19 @@ function Login() {
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
+  const goTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     try {
       await logIn(email, password);
       navigate("/#home");
+      goTop();
     } catch (error) {
       console.log(error);
       setError(error.message);
@@ -30,7 +38,7 @@ function Login() {
           </h1>
         </div>
         {/* form  */}
-        <div className="p-20 min450:p-7 flex justify-center">
+        <div className="page-padding py-[10rem] flex justify-center">
           <form
             onSubmit={handleSubmit}
             className="flex flex-col py-40 px-20 bg-black w-[55rem] min450:w-full  shadow-xl"
@@ -66,7 +74,7 @@ function Login() {
             >
               Sign In
             </button>
-            <div className="flex gap-4 items-center mt-16">
+            <div className="flex gap-4 items-center mt-16 min450:flex-col">
               <p className="text-white text-[1.5rem]">New to Gymate?</p>
               <Link
                 to="/signup"
@@ -77,6 +85,7 @@ function Login() {
             </div>
           </form>
         </div>
+        <Footer />
       </section>
     </>
   );
