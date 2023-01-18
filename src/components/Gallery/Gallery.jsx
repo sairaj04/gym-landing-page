@@ -4,7 +4,7 @@ import BgIcon from "../../images/gallery/bg-icon.png";
 function Gallery() {
   return (
     <>
-      <section id="gallery" className="relative">
+      <section id="gallery" className="relative min450:hidden">
         <img
           src={BgIcon}
           alt="bg_img"
@@ -34,7 +34,7 @@ function Gallery() {
           </div>
 
           {/* gallery */}
-          <div className="gallery-grid py-24 w-full h-auto relative min450:hidden">
+          <div className="gallery-grid py-24 w-full h-auto relative ">
             <div id="item-0"></div>
             <div id="item-1"></div>
             <div id="item-2"></div>
