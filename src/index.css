@@ -743,6 +743,13 @@ body {
   background-image: url('../src/images/classes/fitness.jpg');
 }
 
+/* blog page */
+
+.blog-cta {
+  padding: 18px 22px;
+  margin-left: 0;
+}
+
 /* MEDIA QUERIES --------------------------------*/
 
 @media (max-width: 1200px) {

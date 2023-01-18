@@ -113,12 +113,12 @@ function Navbar() {
                   </a>
                 </li>
                 <li onClick={hamburgerMenu}>
-                  <a
+                  <Link
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="/#team"
+                    to="/blog"
                   >
-                    Team
-                  </a>
+                    Blog
+                  </Link>
                 </li>
                 <li onClick={hamburgerMenu}>
                   <Link
@@ -129,20 +129,20 @@ function Navbar() {
                   </Link>
                 </li>
                 <li onClick={hamburgerMenu}>
-                  <a
+                  <Link
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="/#pricing"
+                    to="/pricing"
                   >
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li onClick={hamburgerMenu}>
-                  <a
+                  <Link
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="/#blog"
+                    to="/classes"
                   >
-                    Blog
-                  </a>
+                    Classes
+                  </Link>
                 </li>
               </ul>
             </div>

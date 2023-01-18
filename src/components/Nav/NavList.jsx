@@ -14,7 +14,7 @@ function NavList() {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <a href="/#home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li
           style={{ transition: "all 0.3s" }}
@@ -38,13 +38,17 @@ function NavList() {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <a href="/#gallery">Gallery</a>
+          <Link onClick={goTop} to={"/blog"}>
+            Blog
+          </Link>
         </li>
         <li
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <a href="/#pricing">Pricing</a>
+          <Link onClick={goTop} to={"/pricing"}>
+            Pricing
+          </Link>
         </li>
         <li
           style={{ transition: "all 0.3s" }}
