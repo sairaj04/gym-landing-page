@@ -15,6 +15,7 @@ function CtaBanner() {
             text="purchase now"
             arrowColor={`text-white`}
             cN="pricing-cta cta-banner-btn"
+            goTo="/contact"
           />
         </div>
       </section>

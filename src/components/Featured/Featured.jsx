@@ -2,6 +2,11 @@ import TitleRed from "../../images/who-we-are/title-bg.svg";
 import MainButton from "../MainButton";
 
 function Featured() {
+  const goTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
   return (
     <>
       <section id="featured" className="page-padding py-[12.5rem] bg-white">
@@ -96,6 +101,7 @@ function Featured() {
               bg={`bg-white`}
               text="Join With Us"
               arrowColor={`text-black`}
+              goTo="/contact"
             />
           </div>
         </div>
