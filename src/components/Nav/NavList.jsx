@@ -32,7 +32,7 @@ function NavList() {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#ff0336]"
         >
-          <Link onClick={goTop} to={"/schedule"}>
+          <Link onClick={goTop} to={"/schedule/monday"}>
             Schedule
           </Link>
         </li>

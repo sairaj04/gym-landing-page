@@ -9,7 +9,14 @@ import { AuthContextProvider } from "./context/AuthContext";
 import Classes from "./Pages/Classes";
 import Price from "./Pages/Price";
 import Blog from "./Pages/Blog";
-import Schedule from "./Pages/Schedule";
+import Schedule from "./Pages/Schedule/Schedule";
+import Monday from "./Pages/Schedule/Monday";
+import Tuesday from "./Pages/Schedule/Tuesday";
+import Wednesday from "./Pages/Schedule/Wednesday";
+import Thursday from "./Pages/Schedule/Thursday";
+import Friday from "./Pages/Schedule/Friday";
+import Saturday from "./Pages/Schedule/Saturday";
+import Sunday from "./Pages/Schedule/Sunday";
 
 function App() {
   return (
@@ -24,7 +31,16 @@ function App() {
           <Route path="/classes" element={<Classes />} />
           <Route path="/pricing" element={<Price />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/schedule" element={<Schedule />} />
+
+          <Route path="schedule" element={<Schedule />}>
+            <Route path="monday" element={<Monday />} />
+            <Route path="tuesday" element={<Tuesday />} />
+            <Route path="wednesday" element={<Wednesday />} />
+            <Route path="thursday" element={<Thursday />} />
+            <Route path="friday" element={<Friday />} />
+            <Route path="saturday" element={<Saturday />} />
+            <Route path="sunday" element={<Sunday />} />
+          </Route>
         </Routes>
       </AuthContextProvider>
     </>

@@ -1,4 +1,12 @@
+import { Link } from "react-router-dom";
+
 function BlogBox({ date, title, description }) {
+  const goTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "none",
+    });
+  };
   return (
     <>
       <div className="w-[37rem] min540:w-[100%] shadow-xl flex flex-col px-[3rem] py-[5rem]">
@@ -11,9 +19,13 @@ function BlogBox({ date, title, description }) {
         {/* desc */}
         <p className="text-[15px] text-[#646464] font-medium">{description}</p>
         {/* blog cta */}
-        <button className="text-[15px] uppercase font-bold mt-10 w-[16rem] h-[5rem] bg-[#FF0336] text-white">
+        <Link
+          to="/blog"
+          onClick={goTop}
+          className="text-[15px] uppercase font-bold mt-10 w-[16rem] h-[5rem] bg-[#FF0336] text-white text-center pt-[14px]"
+        >
           Read more &nbsp; <i className="fa-solid fa-arrow-right"></i>
-        </button>
+        </Link>
       </div>
     </>
   );
