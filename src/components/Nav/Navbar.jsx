@@ -115,6 +115,14 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <Link
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
+                    to="/gallery/page-1"
+                  >
+                    Gallery
+                  </Link>
+                </li>
+                <li onClick={hamburgerMenu}>
+                  <Link
+                    className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/blog"
                   >
                     Blog
