@@ -80,10 +80,10 @@ function About() {
               </div>
               {/* cta button */}
               <MainButton
-                color={`text-white`}
+                color={`!text-white`}
                 bg={`bg-[#3f3f3f]`}
                 cN="about-cta"
-                arrowColor={`text-white`}
+                arrowColor={`!text-white`}
                 hover={`hover:bg-[#FF0336]`}
                 text="take a tour"
                 goTo="/classes"
