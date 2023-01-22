@@ -90,10 +90,10 @@ function ChooseUs() {
                 </p>
               </div>
               <MainButton
-                color={`text-white`}
+                color={`!text-white`}
                 bg={`bg-[#595959]`}
                 text="our classes"
-                arrowColor={`text-white`}
+                arrowColor={`!text-white`}
                 cN="choose-cta"
                 hover={`hover:bg-[#ff0336]`}
                 goTo="/classes"

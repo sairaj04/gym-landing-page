@@ -42,11 +42,11 @@ function About() {
                 that helps you reach your specific goals.
               </p>
               <MainButton
-                color={`text-white`}
+                color={`!text-white`}
                 bg={`bg-[#ff0336]`}
                 goTo="/contact"
                 text="contact us"
-                arrowColor={`text-white`}
+                arrowColor={`!text-white`}
                 cN="pricing-cta blog-cta"
               />
             </div>

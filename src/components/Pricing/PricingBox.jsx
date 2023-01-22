@@ -34,10 +34,10 @@ function PricingBox({ img, price }) {
           </div>
 
           <MainButton
-            color={`text-white`}
+            color={`!text-white`}
             bg={`bg-[#ff0336]`}
             text="purchase now"
-            arrowColor={`text-white`}
+            arrowColor={`!text-white`}
             cN="pricing-cta"
             goTo="/contact"
           />
