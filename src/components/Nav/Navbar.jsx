@@ -97,12 +97,12 @@ function Navbar() {
                   </a>
                 </li>
                 <li onClick={hamburgerMenu}>
-                  <a
+                  <Link
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="/#about"
+                    to="/about"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li onClick={hamburgerMenu}>
                   <Link

@@ -71,12 +71,12 @@ function Login() {
             <span className="bg-[#ff0336] w-[50px] h-[4px] absolute top-[77px]"></span>
             <input
               className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
-              placeholder="Full Name*"
+              placeholder="Full Name *"
               type="text"
             ></input>
             <input
               className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8"
-              placeholder="Email Address*"
+              placeholder="Email Address *"
               type="email"
             ></input>
             <select className="w-full py-[12px] px-[20px] h-[51px] text-[14px] border border-solid border-[#e4e4e4] outline-none mb-8">

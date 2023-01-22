@@ -6,7 +6,7 @@ function Footer() {
       <footer className="bg-white">
         <div className="container page-padding py-[10rem]">
           {/* footer div all */}
-          <div className="flex justify-between min620:flex-col min620:items-center min620:text-center min620:gap-[5rem]">
+          <div className="flex justify-between min620:flex-col min620:items-center min620:text-center min620:gap-[5rem] !text-left">
             {/* logo side */}
             <div className="flex flex-col w-1/3 gap-8">
               <img src={FooterLogo} alt="footer_logo" className="w-[18rem]" />
