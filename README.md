@@ -70,5 +70,10 @@
 </div>
 <br>
 <br>
+<h3 align='center'>About Page 👇</h3>
 
-
+<div align='center'>
+<img src='https://user-images.githubusercontent.com/105128267/213912643-6deef1ff-505d-4d21-8a96-88be2fee242a.png'/>
+</div>
+<br>
+<br>
