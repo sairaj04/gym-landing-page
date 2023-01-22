@@ -107,7 +107,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <Link
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    to="/schedule"
+                    to="/schedule/monday"
                   >
                     Schedule
                   </Link>
