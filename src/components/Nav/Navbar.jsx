@@ -77,8 +77,8 @@ function Navbar() {
 
             {/* hamburger menu */}
             <div
-              className={`flex flex-col fixed w-full left-0 h-screen bg-white z-[9999999999] py-[60px] px-[40px] ease-in-out duration-500  ${
-                hamburger ? "top-0" : "-top-[100%]"
+              className={`flex top-0 flex-col fixed w-full left-0 h-screen bg-white z-[9999999999] py-[60px] px-[40px] ease-in-out duration-500  ${
+                hamburger ? "left-0" : "-left-[100%]"
               }`}
             >
               <i
