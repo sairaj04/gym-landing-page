@@ -10,7 +10,7 @@ function PricingBox({ img, price }) {
         >
           <img src={img} alt="pricing_img" className="w-full h-full" />
           <div className="absolute bg-white text-[20px] font-bold w-[25rem] text-center py-6 text-[#ff0336] -bottom-[18px] left-0 right-0 mx-auto">
-            Begginers
+            Beginners
           </div>
         </div>
         <div className="flex flex-col items-center pt-[20px] pb-[50px]">
